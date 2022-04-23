@@ -1,11 +1,15 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Input, Button } from "semantic-ui-react";
-import { updateInput } from "../../store/features/mainSlice";
+import { updateInput, search } from "../../store/features/mainSlice";
 
 const Form = ({}) => {
   const { address, city, province, country, postalCode } = useSelector(state => state.main);
   const dispatch = useDispatch();
+
+  const checkDisabled = () =>{
+    return !(city !=='' || country !==''); 
+  };
 
   return (
      <>
@@ -60,7 +64,7 @@ const Form = ({}) => {
           }
           />
        </div>
-       <Button className="submitBtn">Submit</Button>
+       <Button className="submitBtn" disabled={checkDisabled()} onClick={() => dispatch(search())}>Submit</Button>
      </>
   );
 };

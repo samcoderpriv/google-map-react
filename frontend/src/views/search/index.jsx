@@ -12,8 +12,6 @@ const Search = ({}) => {
     <Image className="imageRight" src={Illustration}/>
   </>
   );
-
-
 };
 
 export default Search;

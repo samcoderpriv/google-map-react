@@ -136,3 +136,51 @@
 
 
 
+.ui.button.backBtn{
+  align-items: center;
+  padding: 16px;
+
+  position: absolute;
+  width: 129px;
+  height: 50px;
+  left: 1165.73px;
+  top: 36.55px;
+
+  background: #000000;
+  border-radius: 50px;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #FFFFFF;
+}
+.headerAddress{
+  position: absolute;
+  width: 937px;
+  height: 85px;
+  left: 251px;
+  top: 181px;
+
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 82px;
+  /* or 182% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+.mapMain{
+  position: absolute;
+  width: 1156px;
+  height: 518px;
+  left: 142px;
+  top: 373px;
+}
+
